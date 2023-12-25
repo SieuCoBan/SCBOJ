@@ -280,12 +280,6 @@
                     <i class="fa fa-exclamation-triangle" style="color: yellow;"></i>
                 </span>
             </a>
-            <a id="flag_vi" href="#" onclick="submmit_language('vi')" style="margin-right: 5px; margin-top: 4px;">
-                <img src="{{ static('icons/vi_flag.svg') }}" alt="VI" height="24">
-            </a>
-            <a id="flag_en" href="#" onclick="submmit_language('en')" style="margin-right: 5px; margin-top: 4px;">
-                <img src="{{ static('icons/gb_flag.svg') }}" alt="EN" height="24">
-            </a>
             {% if request.user.is_authenticated %}
                 <ul>
                     <li>
@@ -378,10 +372,12 @@
     <footer>
         <span id="footer-content">
             <br>
-            {{_('proudly powered by %(dmoj)s', dmoj=safe('<a style="color: #808080" href="https://dmoj.ca"><b>DMOJ</b></a>'))}} |
-            {{_('follow us on %(github)s and %(facebook)s', github=safe('<a style="color: #808080" href="https://github.com/VNOI-Admin/OJ"><b>Github</b></a>'), facebook=safe('<a style="color: #808080" href="https://www.facebook.com/vnoi.wiki"><b>Facebook</b></a>'))}}
+            Mã nguồn <a style="color: #808080" href="https://github.com/SieuCoBan/SCBOJ"><b>SCBOJ</b></a>
+            phát triển dựa trên <a style="color: #808080" href="https://github.com/DMOJ/online-judge"><b>DMOJ</b></a> và
+            <a style="color: #808080" href="https://github.com/VNOI-Admin/OJ"><b>VNOI-OJ</b></a> |
+            Triển khai bởi <a style="color: #808080" href="https://sieucoban.com"><b>SieuCoBan.com</b></a>
             {% if misc_config.footer %}
-                {{ misc_config.footer|safe }} |
+                {{ misc_config.footer|safe }}
             {% endif %}
             <form id="set_language" action="{{ url('set_language') }}" method="post" style="display: inline">
                 {% csrf_token %}
