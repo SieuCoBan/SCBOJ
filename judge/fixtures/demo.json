@@ -48,16 +48,16 @@
     },
     {
         "fields": {
-            "about": "This is a sample organization. You can use organizations to split up your user base, host private contests, and more.",
+            "about": "Đây là một khóa học mẫu. Bạn có thể sử dụng các khóa học để quản lý các buổi  học, bài tập và học viên trong khóa học.",
             "access_code": null,
             "admins": [
                 1
             ],
             "creation_date": "2017-12-02T08:50:25.199Z",
             "is_open": true,
-            "slug": "vnoj",
-            "name": "VNOJ: Viet Nam Online Judge",
-            "short_name": "VNOJ",
+            "slug": "SCBOJ",
+            "name": "SCBOJ: Hệ thống chấm bài tập lập trình online\n\n",
+            "short_name": "SCBOJ",
             "slots": null
         },
         "model": "judge.organization",
@@ -100,18 +100,18 @@
             "banned_users": [
 
             ],
-            "code": "aplusb",
+            "code": "acongb",
             "curators": [
 
             ],
             "date": "2017-12-02T05:00:00Z",
-            "description": "Tudor is sitting in math class, on his laptop. Clearly, he is not paying attention in this situation. However, he gets called on by his math teacher to do some problems. Since his math teacher did not expect much from Tudor, he only needs to do some simple addition problems. However, simple for you and I may not be simple for Tudor, so please help him!\n\n## Input Specification\n\nThe first line will contain an integer ~N~ (~1 \\le N \\le 100\\,000~), the number of addition problems Tudor needs to do. The next ~N~ lines will each contain two space-separated integers whose absolute value is less than ~1\\,000\\,000\\,000~, the two integers Tudor needs to add.\n\n## Output Specification\n\nOutput ~N~ lines of one integer each, the solutions to the addition problems in order.\n\n## Sample Input\n\n    2\n    1 1\n    -1 0\n\n## Sample Output\n\n    2\n    -1",
+            "description": "Tèo đang ngồi trong lớp học muôn toán nhưng đang chơi game. Cô giáo Tũn thấy vậy nên đã gọi tèo làm một bài toán đoan giản: \"*Cho hai số nguyên bất kỳ, bạn hãy tính tổng của hai số đó.*\"\\nTèo thấy rằng bài toán đơn giản với cô Tũn chứ với Tèo thì khó lắm. Nhưng may mắn Tèo biết lập trình nên đã dùng máy tính viết chương trình giải bài toán của cô Tũn.\\n\\n**Bài toán như sau:** \\n\\n## Mô tả đầu vào\\n- Dòng đầu chứa số nguyên N (với 0 < N <100,000), số phép tính tổng mà Tèo phải tính.\\n- N dòng tiếp theo, mỗi dòng là hai số nguyên mà Tèo cần tính tổng.\\n\\n## Mô tả đầu ra\\nGồm N dòng, mỗi dòng là kết quả của phép tính tổng tương ứng.\\n\\n## Ví dụ đầu vào\\n```\\n2\\n1 1\\n-1 0\\n```\\n\\n## Ví dụ đầu ra\\n```\\n2\\n-1\\n```\\n",
             "group": 1,
             "is_manually_managed": false,
             "is_public": true,
             "license": null,
             "memory_limit": 65536,
-            "name": "A Plus B",
+            "name": "A cong B",
             "og_image": "",
             "partial": true,
             "points": 5.0,
@@ -133,13 +133,13 @@
         "model": "judge.blogpost",
         "pk": 1,
         "fields": {
-            "title": "Ch\u00e0o m\u1eebng b\u1ea1n \u0111\u1ebfn v\u1edbi VNOJ",
-            "slug": "welcome-to-vnoj",
+            "title": "Ch\u00e0o m\u1eebng b\u1ea1n \u0111\u1ebfn v\u1edbi SCBOJ",
+            "slug": "chao-mung-den-voi-scboj",
             "visible": true,
             "global_post": true,
             "sticky": true,
             "publish_on": "2017-12-02T05:00:00Z",
-            "content": "Ch\u00e0o m\u1eebng b\u1ea1n \u0111\u1ebfn v\u1edbi VNOJ.\r\n\r\nVNOJ - Vi\u1ec7t Nam Online Judge - l\u00e0 h\u1ec7 th\u1ed1ng online judge ch\u00ednh th\u1ee9c c\u1ee7a [VNOI](https://team.vnoi.info/)",
+            "content": "Ch\u00e0o m\u1eebng b\u1ea1n \u0111\u1ebfn v\u1edbi SCBOJ.\r\n\r\n Hệ thống chấm bài tập lập trình online triển khai tại [HacNao.com](https://hacknao.com)",
             "summary": "",
             "og_image": "",
             "authors": [
@@ -150,7 +150,7 @@
     {
         "fields": {
             "author": 1,
-            "body": "This is your first comment!",
+            "body": "Nhận xét đầu tiên",
             "hidden": false,
             "level": 0,
             "lft": 1,
@@ -166,8 +166,8 @@
     },
     {
         "fields": {
-            "domain": "localhost:8081",
-            "name": "VNOJ: Viet Nam Online Judge"
+            "domain": "localhost",
+            "name": "SCBOJ: Hệ thống chấm bài tập lập trình online"
         },
         "model": "sites.site",
         "pk": 1
@@ -193,7 +193,7 @@
         "fields": {
             "url": "/about/",
             "title": "Th\u00f4ng tin",
-            "content": "VNOJ - Vi\u1ec7t Nam Online Judge l\u00e0 h\u1ec7 th\u1ed1ng online judge ch\u00ednh th\u1ee9c c\u1ee7a [VNOI](https://team.vnoi.info/)\r\n\r\n\r\n\r\n\r\n# 1. Todo 1\r\n\r\n# 2. Todo 2",
+            "content": "SCBOJ là hệ thống chấm bài tập lập trình online triển khai tại [HacNao.com](https://hacknao.com)",
             "enable_comments": false,
             "template_name": "",
             "registration_required": false,
