@@ -25,10 +25,10 @@
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#231F20">
+    <meta name="msapplication-TileColor" content="#08509F">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     {# Chrome 39 for Android colour #}
-    <meta name="theme-color" content="#231F20">
+    <meta name="theme-color" content="#08509F">
     {% if og_image %}
         <meta property="og:image" content="{{ request.build_absolute_uri(og_image) }}">
     {% else %}
@@ -308,7 +308,7 @@
                     </li>
                 </ul>
             {% else %}
-                <span class="anon">
+                <span class="anon" style=" color: white; margin-left: 10px; ">
                     <a href="{{ url('auth_login') }}?next={{ LOGIN_RETURN_PATH|urlencode }}"><b>{{ _('Log in') }}</b></a>
                     &nbsp;{{ _('or') }}&nbsp;
                     <a href="{{ url('registration_register') }}"><b>{{ _('Sign up') }}</b></a>
