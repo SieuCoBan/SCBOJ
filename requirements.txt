@@ -10,7 +10,7 @@ django-impersonate
 django-redis
 mysqlclient
 dmoj-wpadmin @ git+https://github.com/DMOJ/dmoj-wpadmin.git
-lxml
+lxml==4.2.6
 Pygments<2.12
 mistune<2
 social-auth-core==4.3.0
